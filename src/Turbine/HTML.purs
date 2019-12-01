@@ -254,6 +254,12 @@ a = runFn2 _a <<< processAttributes
 
 foreign import _a :: forall r a o. Subrow r Attributes => Fn2 (Record r) (Component a o) (Component Output o)
 
+i :: forall r a o. Subrow r Attributes => Record r -> Component a o -> Component Output o
+i = runFn2 _i <<< processAttributes
+
+foreign import _i :: forall r a o. Subrow r Attributes => Fn2 (Record r) (Component a o) (Component Output o)
+
+
 type InputAttrs' r =
   ( placeholder :: Behavior String
   , type :: Behavior String

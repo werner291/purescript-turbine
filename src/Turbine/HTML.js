@@ -95,6 +95,10 @@ exports._p = function() {
     return T.elements.p;
 };
 
+exports._i = function() {
+    return T.elements.i;
+};
+
 exports._button = function() {
     return T.elements.button;
 };
